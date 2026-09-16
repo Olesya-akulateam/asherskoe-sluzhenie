@@ -133,10 +133,29 @@
   .foot{color:var(--mut);text-align:center;font-size:13px;padding:34px 0}
   @media(max-width:860px){
     .quals,.dirs,.princ,.scripts,.team{grid-template-columns:1fr 1fr}
-    .hero h1{font-size:42px}.h2{font-size:29px}.verseband .q{font-size:22px}
-    .deputies{gap:26px}.flow .arrow{transform:rotate(90deg)}
+    .hero{padding:74px 0 44px} .hero h1{font-size:42px} .hero .sub{font-size:17px}
+    .h2{font-size:28px} .verseband{padding:42px 0} .verseband .q{font-size:22px}
+    section{padding:48px 0}
+    .deputies{gap:22px}
+    .flow{flex-direction:column;gap:12px} .flow .arrow{display:none}
+    .path{gap:8px} .path .parr{display:none}
   }
-  @media(max-width:560px){.quals,.dirs,.scripts{grid-template-columns:1fr}.princ{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){
+    .wrap{padding:0 16px}
+    .hero{padding:56px 0 36px} .hero h1{font-size:33px} .rocket{width:58px;height:58px;font-size:26px;border-radius:18px}
+    .hero .sub{font-size:15px;padding:8px 16px} .hero p{font-size:16px}
+    .h2{font-size:23px} .lead{font-size:15.5px} .eyebrow{letter-spacing:.16em}
+    .verseband .q{font-size:19px}
+    .quals,.dirs,.scripts,.princ{grid-template-columns:1fr}
+    .team{grid-template-columns:1fr 1fr}
+    .deputies{flex-direction:column;gap:30px}
+    .node,.node.top{min-width:0;width:100%}
+    .fstep{min-width:0;width:100%}
+    .pcard{padding:24px} .banner{padding:34px 22px} .final{padding:42px 22px}
+    .final h2{font-size:26px} .final p{font-size:17px}
+    .path{flex-direction:column;align-items:stretch}
+    .pnode{justify-content:center}
+  }
 </style>
 </head>
 <body>
